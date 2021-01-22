@@ -1,0 +1,48 @@
+// Place all the styles related to the Pokemon controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+@font-face {
+    font-family: 'Pokemon Solid';
+    src: url('Pokemon Solid.ttf');
+ }
+ @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #D3553A;
+
+}
+
+h1 {
+    font-size: 50px;
+    font-family: 'Pokemon Solid';
+    color: #F8EF2E;
+    -webkit-text-stroke: 2px #21448b;
+    letter-spacing: 5px;
+}
+
+nav {
+    display: flex;
+    font-family: 'Share Tech Mono', monospace;
+    
+}
+
+a {
+        background-color: #F8EF2E;
+        color: #21448b;
+        text-decoration: none;
+        font-size: 16px;
+        margin: 5px;
+        padding: 3px;
+        border-radius: 5px;
+        box-shadow: 4px 4px #383838;
+}
+
+img {
+    filter: drop-shadow(6px 6px 2px #383838);
+    width: 20%;
+}

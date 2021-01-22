@@ -1,0 +1,18 @@
+
+<h1>  <%= @mon.name.capitalize %> </h1>
+<img src='<%= @mon.sprites.front_default %>' >
+
+<% if @mon.id == 1 %>
+<nav>
+  <div class="button"><%= link_to  "Next ⇨", pokemon_path(@mon.id+1) %></div>
+</nav>
+<% elsif @mon.id == 898 %>
+<nav>
+  <div class="button"><%= link_to  "⇦ Previous", pokemon_path(@mon.id-1) %></div>
+</nav>
+<% else %>
+<nav>
+  <div class="button"><%= link_to  "⇦ Previous", pokemon_path(@mon.id-1) %></div>   
+  <div class="button"><%= link_to  "Next ⇨", pokemon_path(@mon.id+1) %></div>   
+</nav>
+<% end %>
